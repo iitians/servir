@@ -1,0 +1,128 @@
+.form {
+	display: none;
+	width: 400px;
+	height:auto;
+	transition: .5s all ease-in-out;
+}
+
+
+.form-inicio {
+	background-color: white;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
+
+}
+
+.form-inicio__title {
+	height: 67px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid color(color6);
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+}
+.form-inicio__title h1 {
+	font-size: 18px;
+	color:color(color8);
+  letter-spacing: .1em;
+}
+.form-inicio__item:nth-child(2) {
+	padding:0;
+}
+
+.form-inicio__item {
+	width: 90%;
+	height: 60px;
+	margin-bottom: 1.5em;
+	border-radius:15px;
+	border:none;
+	outline: none;
+	background-color:color(color10);
+	font-size:16px;
+	color:#a3a2a2;
+	border:1px solid color(color11);
+	display: flex;
+
+	& i {
+		width: 15%;
+		position: relative;
+		&::before {
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			color:darken(color(color6),60%);
+			font-size:em(22px);
+		}
+	}
+	& input {
+		border:none;
+		outline: none;
+		display: block;
+		width: 85%;
+		border-radius: 0px 15px 15px 0px;
+		background-color:color(color10);
+		font-size: em(16px);
+	}
+
+	& .view {
+		border:none;
+		outline: none;
+		display: block;
+		width: 70%;
+		border-radius: 0px 15px 15px 0px;
+		background-color:color(color10);
+		font-size: em(16px);
+
+	}
+
+}
+.form-inicio__item:nth-child(4) {
+	margin-bottom: .5em;
+
+}
+.form-inicio__forget {
+	margin-bottom: 1.5em;
+	color:#bbbbbb;
+}
+[class^="icon-cross"]::before,
+[class^="icon-preview"]::before {
+  cursor:pointer;
+}
+
+
+[class^="icon-cross"]:hover::before {
+  color: darken(color(color6),5%);
+}
+
+[class^="icon-preview"]:hover::before {
+  color: darken(color(color6),5%);
+}
+
+.on {
+	display: block;
+ 	animation: in .3s cubic-bezier(0.57,-0.19, 0.66, 1.4);
+}
+
+@keyframes in {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+.off {
+	display: none;
+}

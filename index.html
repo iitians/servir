@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+<button href="#" class="btn-ready">Get Started</button>
+<link href="https://file.myfontastic.com/BXWRjb2NgvtUAFE3hm6aEf/icons.css" rel="stylesheet">
+
+	<section class="form">
+
+
+		<form class="form-inicio" action="nameServlet" method="post">
+			<div class="form-inicio__title">
+				<h1>Ingreso a servir</h1>
+				<i class="icon-cross out-cross" id="cross"></i>
+			</div>
+
+			<div class="form-inicio__item">
+				<i class="icon-user"></i>
+				<input  type="text" name="txtUsuario" placeholder="Usuario">
+			</div>
+			<div class="form-inicio__item">
+				<i class="icon-lock"></i>
+				<input class="view"  type="password" name="txtClave" placeholder="Contraseña">
+				<i class="icon-preview"></i>
+			</div>
+			<input class="form-inicio__item btn-type-1" type="submit" name="BtnIngresar" value="Ingresar">
+			<a class="form-inicio__forget" class="" href="">Olvidaste tu contraseña?</a>
+		</form>
+
+		<div class="form-error">
+
+
+
+		</div>
+
+	</section>
+
+	<script type="text/javascript">
+
+		var button = document.getElementsByClassName('btn-ready')[0];
+		var form = document.getElementsByClassName('form')[0];
+		var cross = document.getElementById('cross');
+
+		cross.addEventListener('click',function(){
+			form.classList.add('off');
+			button.classList.remove('off');
+			button.classList.add('on');
+			console.log(button);
+		});
+
+		button.addEventListener('click',function(){
+			form.classList.add('on');
+			form.classList.remove('off');
+			this.classList.add('off');
+			console.log(this);
+		});
+		var inputpass = document.getElementsByClassName('view')[0];
+		var preview = document.getElementsByClassName('icon-preview')[0];
+		preview.addEventListener('mousedown',function() {
+			inputpass.type = "text";
+			this.addEventListener('mouseup',function(){
+				inputpass.type="password";
+			});
+		});
+	</script>
+</body>
+</html>

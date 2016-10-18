@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: 'GothamRounded_Medium';
+  src: url('../lib/fonts/GothamRounded_Medium.otf') format('opentype'),
+       url('../lib/fonts/GothamRounded_Medium.ttf')  format('truetype');
+ }
+
+body,*,html {
+	box-sizing: border-box;
+	font-family: 'GothamRounded_Medium', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background-color: #DCDCDC;
+	height: 100vh;
+}
+
+
+[class^="icon"]::before {
+  color:#E6E6E6;
+  font-size: 1.5em;
+  position: relative;
+  top:2px;
+}
+
+
+// Convertir px a em
+@function em($el,$parent:16px){
+  @return ($el / $parent) * 1em;
+}
+
+// Convertir px a em
+@function rem($el){
+  @return ($el / 16px) * 1rem;
+}
+
+$colors:(
+  color1: rgba(38, 84, 124, 1),
+  color2: rgba(239, 71, 111, 1),
+  color3: rgba(255, 209, 102, 1),
+  color4: rgba(6, 214, 160, 1),
+  color5: rgba(252, 252, 252, 1),
+  color6: rgba(221, 221, 221,1),
+  color7: rgba(230, 230, 230,1),
+  color8: rgba(29, 29, 29,1),
+  color9: rgba(47, 48, 48,1),
+  color10: rgba(237, 237, 237,1),
+  color11: rgba(213, 213, 213,1)
+);
+
+
+// Funcion para obtener color
+@function color($color){
+  @return map-get($colors,$color);
+}
+
+// Funcion para obtener imagenes
+@function img($img){
+  @return url('../img/#{$img}');
+}
+
+
+
+
+
+
+//@import "base/normalize";
+
+
+@import "components/login";
+
+
+@import "modules/buttons";
