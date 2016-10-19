@@ -6,8 +6,9 @@
 }
 
 .nav-main {
-  width: 400px;
+  width: 350px;
   height: 100%;
+  max-height: 700px;
   display: flex;
   flex-direction: column;
   padding: $gutter;
@@ -44,10 +45,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: .8em;
+  padding-right: .8em;
 
   & .nav-user__image {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     overflow: hidden;
     // border: 2px solid #1d1d1d;
@@ -69,7 +72,7 @@
 
 
       & .name-profile {
-        font-size: em(22px);
+        font-size: em(20px);
         color: color(color8);
       }
 
@@ -85,28 +88,38 @@
     width: 10%;
     position: relative;
     &:hover .icon-chevron-down::before {
-      transform: translateX(50px);
+
     }
     &:hover .nav-profile {
       display: block;
     }
 
-      & .nav-profile {
-        display: none;
-        width: 250px;
-        height: 300px;
-        position: absolute;
-        top:-135%;
-        left:300%;
-        @include style-box();
 
-
-      }
     }
 
   }
 
 }
+
+.nav-profile {
+  display: none;
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top:-130%;
+  left:290%;
+  @include style-box();
+}
+
+.me-drop {
+  position: relative;
+
+  &:hover .nav-profile {
+    display: block;
+  }
+}
+
+
 
 
 .icon-chevron-down::before {
@@ -122,7 +135,7 @@
 
 
 .nav-profile {
-  animation: in 400ms ease-in-out;
+  animation: in-drop 400ms ease-in-out;
   transform-origin: top left;
   &__item {
     flex-grow: 1;
@@ -163,13 +176,13 @@
     padding-left: 1em;
 
 
-    &:last-child {
+    &.border-top {
       border-top:1px solid color(color6);
     }
   }
 }
 
-@keyframes in {
+@keyframes in-drop {
   0% {
     opacity: 0;
     transform: translateX(15px);
@@ -188,4 +201,42 @@
     transfom: translate();
   }
 
+}
+
+
+
+.nav-main__nav-app {
+
+  .nav-principal {
+
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+      .less {
+        color: #707070;
+      }
+      .border {
+        border-top: 1px solid color(color6);
+      }
+      &__item {
+        text-transform: uppercase;
+        font-size: em(14px);
+        letter-spacing: .1em;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: space-between;
+
+
+
+        & .icon-chevron-down::before {
+          color: color(color8);
+        }
+    }
+  }
 }
