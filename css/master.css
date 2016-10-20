@@ -239,7 +239,8 @@ label {
   box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4); }
 
 .me-drop {
-  position: relative; }
+  position: relative;
+  z-index: 1000; }
   .me-drop:hover .nav-profile {
     display: block; }
 
@@ -392,7 +393,8 @@ label {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
-  margin-top: 1.25em; }
+  margin-top: 1.25em;
+  background-color: transparent; }
   .main-app__inputs form.form-evaluacion {
     height: 100%;
     display: -ms-flexbox;
@@ -405,7 +407,11 @@ label {
 
 .main-evaluacion {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
+  border-radius: 15px 0px 0px 15px; }
   .main-evaluacion-left {
     width: 50%;
     display: -ms-flexbox;
@@ -458,6 +464,10 @@ label {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
+  border-radius: 0px 15px 15px 0px;
   padding: 1.25em; }
   .buscar-postulante__item {
     -ms-flex-positive: 1;
@@ -601,8 +611,8 @@ label {
       left: 0.5em; }
 
 .type-plus {
-  width: 4.875em;
-  height: 4.875em;
+  width: 4.0625em;
+  height: 4.0625em;
   border-radius: 50%;
   background-color: #ffd166;
   box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
@@ -658,12 +668,24 @@ label {
     position: absolute;
     top: 0;
     right: 0;
-    box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
+    transition: all 300ms ease-in-out; }
     .type-input-search .search:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #06cc99; }
     .type-input-search .search .icon-search::before {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 1.2em; }
+
+.out-area {
+  animation: out-a 500ms ease-in-out;
+  transform-origin: left; }
+
+@keyframes out-a {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(100deg); } }

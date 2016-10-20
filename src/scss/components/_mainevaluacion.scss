@@ -3,6 +3,8 @@
   height: 260px;
   @include style-box();
   margin-top: em(20px);
+  background-color:rgba(0,0,0,0);
+
 
   form.form-evaluacion {
 
@@ -22,6 +24,8 @@
 
 .main-evaluacion {
   display: flex;
+  @include style-box();
+  border-radius:15px 0px 0px 15px;
 
   &-left {
     width: 50%;
@@ -84,6 +88,8 @@
 .buscar-postulante {
 display: flex;
 flex-direction: column;
+@include style-box();
+border-radius:0px 15px 15px 0px;
 padding: em(20px);
   &__item {
     flex-grow: 1;

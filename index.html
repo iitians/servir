@@ -147,12 +147,12 @@
             </div>
           </div>
         </div>
-        <div class="buscar-postulante">
+        <div class="buscar-postulante out-area" id="area-buscar">
           <div class="buscar-postulante__item">
             <label for="">Codigo de postulante</label>
             <div class="type-input type-input-search">
               <input class="type-input__2" type="text" name="name">
-              <div class="search">
+              <div class="search" id="buscar">
                 <i class="icon-search"></i>
               </div>
             </div>
@@ -213,5 +213,18 @@
 
   </section>
 </section>
+
+
+  <script type="text/javascript">
+    
+    var buscar = document.getElementById('buscar');
+    var area   = document.getElementById('area-buscar');
+    buscar.addEventListener('click',function(){
+      //area.classList.add('out-area');
+    });
+
+
+  </script>
+
   </body>
 </html>

@@ -1,0 +1,15 @@
+ 
+.out-area {
+	animation:out-a 500ms ease-in-out;
+	transform-origin:left;
+}
+
+@keyframes out-a {
+	0% {
+		transform:rotate(0);
+	}
+	100% {
+		transform:rotate(100deg);
+	}
+
+}
