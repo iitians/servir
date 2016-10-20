@@ -1,0 +1,36 @@
+$height-title:50px;
+
+.main-app__title {
+  height: $height-title;
+  width: 100%;
+  @include style-box();
+  display: flex;
+
+
+  & h1 {
+    font-size: em(28px);
+    width: 75%;
+    letter-spacing: .1em;
+    text-align: center;
+    line-height: $height-title;
+  }
+  & .porcentage {
+      border-radius: 0 15px 15px 0;
+      width: 25%;
+      height: 100%;
+      background-color: color(color3);
+
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+
+      }
+  }
+}
+
+#capa-1 {
+  position: absolute;
+  background-color: red;
+}

@@ -35,3 +35,139 @@
  	transform: translateY(-5%);
 	box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2)
 }
+
+
+
+//toogle button
+
+.type-checkbox {
+	display: none;
+	+ label {
+		$time: 300ms;
+		display: block;
+		width: em(160px);
+		height: em(45px);
+		background-color: color(color4);
+		border-radius: em(22px);
+		box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
+		transition: all $time cubic-bezier(0.79,-0.01, 0.36, 1);
+		cursor:pointer;
+		position: relative;
+
+		span {
+			position: absolute;
+			color:white;
+			font-size: em(12px);
+		}
+
+		span.aprobado {
+			top:50%;
+			transform:translateY(-50%);
+			left:2.5em;
+			animation:left-check 300ms ease-in-out;
+			@keyframes left-check{
+				0% {
+					opacity: 0;
+					left:5em;
+				}
+				100% {
+					opacity: 1;
+					left:2.5em;
+				}
+			}
+		}
+
+		span.desaprobado {
+			top:50%;
+			transform:translateY(-50%);
+			right:1.3em;
+			display: none;
+			animation:right-check 300ms ease-in-out;
+			@keyframes left-check{
+				0% {
+					opacity: 0;
+					right:5em;
+				}
+				100% {
+					opacity: 1;
+					right:1.3em;
+				}
+			}
+		}
+
+		&:before {
+			display: block;
+			content:"";
+			width: em(35px);
+			height: em(35px);
+			border-radius: 50%;
+			background-color: white;
+			box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
+			position: relative;
+			top:50%;
+			transform: translateY(-50%);
+			left: em(117px);
+			transition: left $time cubic-bezier(0.79,-0.01, 0.36, 1);
+		}
+	}
+
+	&:checked {
+
+		+ label {
+			background-color: color(color2);
+
+			span.aprobado {
+				display: none;
+			}
+			span.desaprobado {
+				display: block;
+			}
+
+			&:before {
+				left:em(8px);
+			}
+		}
+	}
+}
+
+
+
+
+// plus
+
+.type-plus {
+  width:em(78px);
+  height:em(78px);
+  border-radius:50%;
+  background-color:color(color3);
+  box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
+  position:relative;
+  transition:all 300ms ease-in-out;
+
+  & input {
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1000;
+
+  }
+
+  & .icon-plus::before {
+	color:white;
+	font-size: 3.5em;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+  }
+
+  &:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 6px 15px -5px rgba(0,0,0,0.4);
+
+  }
+
+}

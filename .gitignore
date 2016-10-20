@@ -39,3 +39,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 >>>>>>> 0b3540b6fdbfbd8845466f15f9ed3b51846ab9c9
+
+
+.idea/

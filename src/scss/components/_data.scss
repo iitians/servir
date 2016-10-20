@@ -1,0 +1,49 @@
+.main-app__data {
+  width: 100%;
+  height: 250px;
+  @include style-box();
+  margin-top: em(20px);
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5em;
+}
+
+.table-data {
+  width: 95%;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  &-head {
+    color: color(color1);
+    font-size: em(14px);
+    & tr {
+      text-align: center;
+    }
+  }
+  &-body {
+    color: color(color8);
+    font-size: em(14px);
+    & tr {
+
+      text-align: center;
+    }
+
+    &__item {
+      height:60px;
+      border-bottom: 1px solid color(color8);
+    }
+  }
+}
+
+
+.icon-trash {
+  cursor:pointer;
+  &::before {
+    color:darken(color(color11),30%);
+    transition: all 300ms ease-in-out;
+  }
+
+  &:hover:before {
+    color:color(color2);
+  }
+}

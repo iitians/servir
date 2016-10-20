@@ -1,0 +1,96 @@
+.main-app__inputs {
+  width: 100%;
+  height: 260px;
+  @include style-box();
+  margin-top: em(20px);
+
+  form.form-evaluacion {
+
+    height: 100%;
+    display: flex;
+    & .main-evaluacion {
+      width: 65%;
+      border-right: 1px solid color(color6);
+    }
+
+    & .buscar-postulante {
+      width: 35%;
+    }
+  }
+}
+
+
+.main-evaluacion {
+  display: flex;
+
+  &-left {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    padding: em(20px);
+    &__item {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      & label {
+        margin-left: 10px;
+
+      }
+
+
+    }
+  }
+
+  &-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: em(20px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+    padding-bottom: 0;
+    &__description {
+      width: 100%;
+      height: 60%;
+
+
+      & label {
+        margin-left: 10px;
+      }
+    }
+    &__add {
+      width: 100%;
+      height:40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+  }
+
+}
+
+
+
+.estado {
+  margin-top: .5em;
+  align-self: center;
+}
+
+
+.buscar-postulante {
+display: flex;
+flex-direction: column;
+padding: em(20px);
+  &__item {
+    flex-grow: 1;
+
+    & label {
+      padding-left: 10px;
+    }
+  }
+
+}

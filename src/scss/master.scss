@@ -5,6 +5,8 @@
        url('../lib/fonts/GothamRounded_Medium.ttf')  format('truetype');
  }
 
+
+
 body,*,html,a {
 	box-sizing: border-box;
 	font-family: 'GothamRounded_Medium', sans-serif;
@@ -27,7 +29,6 @@ img {
   width: 100%;
   height: 100%;
 }
-
 
 
 
@@ -85,16 +86,34 @@ $wrapper:1200px;
   @return url('../img/#{$img}');
 }
 
+label {
+  text-transform: uppercase;
+  font-size: 15px;
+  color:color(color8);
+}
 
 
 
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 
 
 //@import "base/normalize";
-
+.main-app {
+  width: 850px;
+  height: auto;
+  padding-top:em(20px);
+  padding-bottom: em(20px);
+}
 
 @import "components/login";
 @import "components/nav";
-
+@import "components/title";
+@import "components/mainevaluacion";
+@import "components/data";
 
 @import "modules/buttons";
+@import "modules/inputs";

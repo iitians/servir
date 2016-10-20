@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="wrapper">
-
+    <section class="app">
     <section class="nav-main">
       <div class="nav-main__nav-user">
 
@@ -102,7 +102,116 @@
 
     </section>
 
-  </body>
+  <section class="main-app">
+    <div class="main-app__title">
+      <h1>METODO DE EVALUACIÓN</h1>
+      <div class="porcentage">
 
-    </section>
+
+
+      </div>
+
+    </div>
+
+    <div class="main-app__inputs">
+      <form class="form-evaluacion" action="index.html" method="post">
+        <div class="main-evaluacion">
+          <div class="main-evaluacion-left">
+            <div class="main-evaluacion-left__item">
+              <label for="">Codigo de Evaluación</label>
+              <input class="type-input" type="text" name="name">
+            </div>
+            <div class="main-evaluacion-left__item">
+              <label for="">Fecha de registro</label>
+              <input class="type-input" type="text" name="name">
+            </div>
+            <div class="main-evaluacion-left__item">
+              <label for="">Estado</label>
+              <input class="type-checkbox" id="toogle" type="checkbox" name="name">
+              <label class="estado" for="toogle">
+                <span class="aprobado">APROBADO</span>
+                <span class="desaprobado">DESAPROBADO</span>
+              </label>
+            </div>
+          </div>
+          <div class="main-evaluacion-right">
+            <div class="main-evaluacion-right__description">
+              <label for="">Descripción</label>
+              <input class="type-descripcion" type="text" name="name">
+            </div>
+            <div class="main-evaluacion-right__add">
+              <div class="type-plus">
+                <input type="submit">
+                <i class="icon-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buscar-postulante">
+          <div class="buscar-postulante__item">
+            <label for="">Codigo de postulante</label>
+            <div class="type-input type-input-search">
+              <input class="type-input__2" type="text" name="name">
+              <div class="search">
+                <i class="icon-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="buscar-postulante__item">
+            <label for="">Nombre de postulante</label>
+            <input class="type-input" type="text" name="name">
+          </div>
+          <div class="buscar-postulante__item">
+            <label for="">Nota del postulante</label>
+            <input class="type-input" type="text" name="name">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="main-app__data">
+      <table class="table-data">
+        <thead class="table-data-head">
+          <tr>
+            <th class="table-data-head__item">C. EVALU</th>
+            <th class="table-data-head__item">DESCRIPCIÓN</th>
+            <th class="table-data-head__item">F. REGISTRO</th>
+            <th class="table-data-head__item">ESTADO</th>
+            <th class="table-data-head__item">C. POSTU</th>
+            <th class="table-data-head__item">N. POSTU</th>
+            <th class="table-data-head__item">M Y/O E</th>
+          </tr>
+        </thead>
+        <tbody class="table-data-body">
+          <tr>
+            <td class="table-data-body__item">ME001</td>
+            <td class="table-data-body__item">Postula desde Ica</td>
+            <td class="table-data-body__item">20/08/2014</td>
+            <td class="table-data-body__item">A</td>
+            <td class="table-data-body__item">PT001</td>
+            <td class="table-data-body__item">Jeyson</td>
+            <td class="table-data-body__item"><i class="icon-trash"></i></td>
+          </tr>
+          <tr>
+            <td class="table-data-body__item">ME001</td>
+            <td class="table-data-body__item">Postula desde Ica</td>
+            <td class="table-data-body__item">20/08/2014</td>
+            <td class="table-data-body__item">A</td>
+            <td class="table-data-body__item">PT001</td>
+            <td class="table-data-body__item">Jeyson</td>
+            <td class="table-data-body__item"><i class="icon-trash"></i></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+
+  </section>
+
+
+  </section>
+</section>
+  </body>
 </html>
