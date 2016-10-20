@@ -89,7 +89,11 @@
 position:relative;
 display: flex;
 flex-direction: column;
+<<<<<<< HEAD
 background-color:white;
+=======
+@include style-box();
+>>>>>>> 08b84f32a072e4a0dc6951a8619a364edcb0fd30
 border-radius:0px 15px 15px 0px;
 padding: em(20px);
   &__item {
