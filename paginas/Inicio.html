@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../css/master.css">
+    <link href="https://file.myfontastic.com/BXWRjb2NgvtUAFE3hm6aEf/icons.css" rel="stylesheet">
+</head>
+<body>
+<section class="wrapper">
+    <section class="app">
+        <section class="nav-main">
+            <div class="nav-main__nav-user">
+
+                <div class="nav-user__image">
+                    <img src="../lib/images/user.jpg" alt="" />
+                </div>
+
+                <div class="nav-user__info-user">
+                    <div class="nav-user__info-user__name">
+                        <a  class="name-profile" href="">Ashlie Martina</a>
+                        <a  class="type-profile" href="#">Administrador</a>
+                    </div>
+                    <i   class="nav-user__info-user__profile icon-chevron-down">
+                        <div class="nav-profile">
+                            <ul class="nav-perfil">
+                                <li class="nav-profile__item"><a href="#">Perfil</a></li>
+                                <li class="nav-profile__item"><a href="#">Configuración</a></li>
+                                <li class="nav-profile__item"><a href="#">Notificaciones</a></li>
+                                <li class="nav-profile__item"><a href="#">Mensajes</a></li>
+                                <li class="nav-profile__item border-top"><a href="#">Cerrar sesión</a></li>
+                            </ul>
+
+                        </div>
+                    </i>
+                </div>
+
+            </div>
+
+            <nav class="nav-main__nav-app">
+                <ul class="nav-principal">
+                    <li class="nav-principal__item">
+                        Mantenimiento
+                        <i class="nav-user__info-user__profile icon-chevron-down me-drop">
+                            <div class="nav-profile me">
+                                <ul class="nav-perfil">
+                                    <li class="nav-profile__item"><a href="#">Métodos de Evaluación</a></li>
+                                    <li class="nav-profile__item"><a href="#">Convenios de Asignación</a></li>
+                                    <li class="nav-profile__item"><a href="#">Proyecto de Resolución</a></li>
+                                </ul>
+
+                            </div>
+                        </i>
+                    </li>
+                    <li class="nav-principal__item">Capacitación de GDGP
+                        <i class="nav-user__info-user__profile icon-chevron-down me-drop">
+                            <div class="nav-profile me">
+                                <ul class="nav-perfil">
+                                    <li class="nav-profile__item"><a href="#">Resultados de Métodos de Evaluación</a></li>
+                                    <li class="nav-profile__item"><a href="#">Resulución e incorporación</a></li>
+                                </ul>
+                            </div>
+                        </i></li>
+                    <li class="nav-principal__item">Convenio de asignación
+                        <i class="nav-user__info-user__profile icon-chevron-down me-drop">
+                            <div class="nav-profile me">
+                                <ul class="nav-perfil">
+                                    <li class="nav-profile__item"><a href="#">Actualización del convenio</a></li>
+                                </ul>
+                            </div>
+                        </i>
+                    </li>
+                    <li class="nav-principal__item">Proyecto de resolución
+                        <i class="nav-user__info-user__profile icon-chevron-down me-drop">
+                            <div class="nav-profile me">
+                                <ul class="nav-perfil">
+                                    <li class="nav-profile__item"><a href="#">Actualización el proyecto de resolución</a></li>
+                                </ul>
+                            </div>
+                        </i>
+                    </li>
+                    <li class="nav-principal__item">Pago de planilla
+                        <i class="nav-user__info-user__profile icon-chevron-down me-drop">
+                            <div class="nav-profile me">
+                                <ul class="nav-perfil">
+                                    <li class="nav-profile__item"><a href="#">Generar pagos</a></li>
+                                    <li class="nav-profile__item"><a href="#">Actualización de Planilla</a></li>
+                                </ul>
+                            </div>
+                        </i>
+                    </li>
+                    <li class="nav-principal__item less border">Sobre nosotros</li>
+                    <li class="nav-principal__item less">Terminos y condiciones</li>
+                    <li class="nav-principal__item less">Contacto</li>
+                </ul>
+            </nav>
+
+            <div class="nav-main__copyright">
+
+            </div>
+
+        </section>
+        <section class="main-app servir-flex">
+
+            <h1 class="servir">SERVIR</h1>
+        </section>
+
+
+
+    </section>
+</section>
+
+
+<script type="text/javascript">
+
+    var buscar = document.getElementById('buscar');
+    var area   = document.getElementById('area-buscar');
+    var entrada = document.getElementById('entrada');
+    buscar.addEventListener('click',function(){
+        area.classList.add('out-area');
+        setTimeout(function(){
+            area.classList.remove('out-area','show');
+            entrada.classList.add('in-area');
+        },1000);
+    });
+
+</script>
+
+</body>
+</html>

@@ -15,7 +15,7 @@
       border-right: 1px solid color(color6);
     }
 
-    & .buscar-postulante {
+    & .buscar {
       width: 35%;
     }
   }
@@ -78,30 +78,44 @@
 }
 
 
-
 .estado {
   margin-top: .5em;
   align-self: center;
 }
 
-
-.buscar-postulante {
-position:relative;
-display: flex;
-flex-direction: column;
-<<<<<<< HEAD
-background-color:white;
-=======
-@include style-box();
->>>>>>> 08b84f32a072e4a0dc6951a8619a364edcb0fd30
-border-radius:0px 15px 15px 0px;
-padding: em(20px);
-  &__item {
-    flex-grow: 1;
-
-    & label {
-      padding-left: 10px;
+.buscar {
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+  &-data,
+  &-principal {
+    display: none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: white;
+    border-radius:0px 15px 15px 0px;
+    transform-origin:top left;
+    &.show {
+      display: block;
     }
   }
+  &-data {
+        
+  }
 
+
+
+  &-principal {
+  flex-direction: column;
+  padding: em(20px);
+
+    &__item {
+      flex-grow: 1;
+
+      & label {
+        padding-left: 10px;
+      }
+    }
+  }
 }

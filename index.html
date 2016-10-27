@@ -1,243 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Inicio</title>
+<head>
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link href="https://file.myfontastic.com/BXWRjb2NgvtUAFE3hm6aEf/icons.css" rel="stylesheet">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+<button href="#" class="btn-ready">Get Started</button>
 
-    <link rel="stylesheet" href="css/master.css">
-    <link href="https://file.myfontastic.com/BXWRjb2NgvtUAFE3hm6aEf/icons.css" rel="stylesheet">
-  </head>
-  <body>
-    <section class="wrapper">
-    <section class="app">
-    <section class="nav-main">
-      <div class="nav-main__nav-user">
+	<section class="form">
 
-        <div class="nav-user__image">
-          <img src="lib/images/user.jpg" alt="" />
-        </div>
 
-        <div class="nav-user__info-user">
-          <div class="nav-user__info-user__name">
-              <a  class="name-profile" href="">Ashlie Martina</a>
-              <a  class="type-profile" href="#">Administrador</a>
-          </div>
-          <i   class="nav-user__info-user__profile icon-chevron-down">
-            <div class="nav-profile">
-              <ul class="nav-perfil">
-                <li class="nav-profile__item"><a href="#">Perfil</a></li>
-                <li class="nav-profile__item"><a href="#">Configuración</a></li>
-                <li class="nav-profile__item"><a href="#">Notificaciones</a></li>
-                <li class="nav-profile__item"><a href="#">Mensajes</a></li>
-                <li class="nav-profile__item border-top"><a href="#">Cerrar sesión</a></li>
-              </ul>
+		<form class="form-inicio" action="paginas/inicio.html">
+			<div class="form-inicio__title">
 
-            </div>
-          </i>
-        </div>
+				<h1>Ingreso a servir</h1>
+				<i class="icon-cross out-cross" id="cross"></i>
+			</div>
 
-      </div>
+			<div class="form-inicio__item">
+				<i class="icon-user"></i>
+				<input  type="text" name="txtUsuario" placeholder="Usuario">
+			</div>
+			<div class="form-inicio__item">
+				<i class="icon-lock"></i>
+				<input class="view"  type="password" name="txtClave" placeholder="Contraseña">
+				<i class="icon-preview"></i>
+			</div>
+			<input class="form-inicio__item btn-type-1" type="submit" name="BtnIngresar" value="Ingresar">
+			<a class="form-inicio__forget" class="" href="">Olvidaste tu contraseña?</a>
+		</form>
 
-      <nav class="nav-main__nav-app">
-        <ul class="nav-principal">
-          <li class="nav-principal__item">
-            Mantenimiento
-            <i class="nav-user__info-user__profile icon-chevron-down me-drop">
-              <div class="nav-profile me">
-                <ul class="nav-perfil">
-                  <li class="nav-profile__item"><a href="#">Métodos de Evaluación</a></li>
-                  <li class="nav-profile__item"><a href="#">Convenios de Asignación</a></li>
-                  <li class="nav-profile__item"><a href="#">Proyecto de Resolución</a></li>
-                </ul>
-
-              </div>
-            </i>
-          </li>
-          <li class="nav-principal__item">Capacitación de GDGP
-            <i class="nav-user__info-user__profile icon-chevron-down me-drop">
-              <div class="nav-profile me">
-                <ul class="nav-perfil">
-                  <li class="nav-profile__item"><a href="#">Resultados de Métodos de Evaluación</a></li>
-                  <li class="nav-profile__item"><a href="#">Resulución e incorporación</a></li>
-                </ul>
-              </div>
-            </i></li>
-          <li class="nav-principal__item">Convenio de asignación
-            <i class="nav-user__info-user__profile icon-chevron-down me-drop">
-              <div class="nav-profile me">
-                <ul class="nav-perfil">
-                  <li class="nav-profile__item"><a href="#">Actualización del convenio</a></li>
-                </ul>
-              </div>
-            </i>
-          </li>
-          <li class="nav-principal__item">Proyecto de resolución
-            <i class="nav-user__info-user__profile icon-chevron-down me-drop">
-              <div class="nav-profile me">
-                <ul class="nav-perfil">
-                  <li class="nav-profile__item"><a href="#">Actualización el proyecto de resolución</a></li>
-                </ul>
-              </div>
-            </i>
-          </li>
-          <li class="nav-principal__item">Pago de planilla
-            <i class="nav-user__info-user__profile icon-chevron-down me-drop">
-              <div class="nav-profile me">
-                <ul class="nav-perfil">
-                  <li class="nav-profile__item"><a href="#">Generar pagos</a></li>
-                  <li class="nav-profile__item"><a href="#">Actualización de Planilla</a></li>
-                </ul>
-              </div>
-            </i>
-          </li>
-          <li class="nav-principal__item less border">Sobre nosotros</li>
-          <li class="nav-principal__item less">Terminos y condiciones</li>
-          <li class="nav-principal__item less">Contacto</li>
-        </ul>
-      </nav>
-
-      <div class="nav-main__copyright">
-
-      </div>
-
-    </section>
-
-  <section class="main-app">
-    <div class="main-app__title">
-      <h1>METODO DE EVALUACIÓN</h1>
-      <div class="porcentage">
+		<div class="form-error">
 
 
 
-      </div>
+		</div>
 
-    </div>
+	</section>
 
-    <div class="main-app__inputs">
-      <form class="form-evaluacion" action="index.html" method="post">
-        <div class="main-evaluacion">
-          <div class="main-evaluacion-left">
-            <div class="main-evaluacion-left__item">
-              <label for="">Codigo de Evaluación</label>
-              <input class="type-input" type="text" name="name">
-            </div>
-            <div class="main-evaluacion-left__item">
-              <label for="">Fecha de registro</label>
-              <input class="type-input" type="text" name="name">
-            </div>
-            <div class="main-evaluacion-left__item">
-              <label for="">Estado</label>
-              <input class="type-checkbox" id="toogle" type="checkbox" name="name">
-              <label class="estado" for="toogle">
-                <span class="aprobado">APROBADO</span>
-                <span class="desaprobado">DESAPROBADO</span>
-              </label>
-            </div>
-          </div>
-          <div class="main-evaluacion-right">
-            <div class="main-evaluacion-right__description">
-              <label for="">Descripción</label>
-              <input class="type-descripcion" type="text" name="name">
-            </div>
-            <div class="main-evaluacion-right__add">
-              <div class="type-plus">
-                <input type="submit">
-                <i class="icon-plus"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-<<<<<<< HEAD
+	<script type="text/javascript">
 
-        <div class="buscar-postulante" id="area-buscar">
-        <div class="buscar-main" id="entrada">Hola </div>
-=======
-        <div class="buscar-postulante out-area" id="area-buscar">
->>>>>>> 08b84f32a072e4a0dc6951a8619a364edcb0fd30
-          <div class="buscar-postulante__item">
-            <label for="">Codigo de postulante</label>
-            <div class="type-input type-input-search">
-              <input class="type-input__2" type="text" name="name">
-              <div class="search" id="buscar">
-                <i class="icon-search"></i>
-              </div>
-            </div>
-          </div>
-          <div class="buscar-postulante__item">
-            <label for="">Nombre de postulante</label>
-            <input class="type-input" type="text" name="name">
-          </div>
-          <div class="buscar-postulante__item">
-            <label for="">Nota del postulante</label>
-            <input class="type-input" type="text" name="name">
-          </div>
-        </div>
-      </form>
-    </div>
+		var button = document.getElementsByClassName('btn-ready')[0];
+		var form = document.getElementsByClassName('form')[0];
+		var cross = document.getElementById('cross');
 
-    <div class="main-app__data">
-      <table class="table-data">
-        <thead class="table-data-head">
-          <tr>
-            <th class="table-data-head__item">C. EVALU</th>
-            <th class="table-data-head__item">DESCRIPCIÓN</th>
-            <th class="table-data-head__item">F. REGISTRO</th>
-            <th class="table-data-head__item">ESTADO</th>
-            <th class="table-data-head__item">C. POSTU</th>
-            <th class="table-data-head__item">N. POSTU</th>
-            <th class="table-data-head__item">M Y/O E</th>
-          </tr>
-        </thead>
-        <tbody class="table-data-body">
-          <tr>
-            <td class="table-data-body__item">ME001</td>
-            <td class="table-data-body__item">Postula desde Ica</td>
-            <td class="table-data-body__item">20/08/2014</td>
-            <td class="table-data-body__item">A</td>
-            <td class="table-data-body__item">PT001</td>
-            <td class="table-data-body__item">Jeyson</td>
-            <td class="table-data-body__item"><i class="icon-trash"></i></td>
-          </tr>
-          <tr>
-            <td class="table-data-body__item">ME001</td>
-            <td class="table-data-body__item">Postula desde Ica</td>
-            <td class="table-data-body__item">20/08/2014</td>
-            <td class="table-data-body__item">A</td>
-            <td class="table-data-body__item">PT001</td>
-            <td class="table-data-body__item">Jeyson</td>
-            <td class="table-data-body__item"><i class="icon-trash"></i></td>
-          </tr>
+		cross.addEventListener('click',function(){
+			form.classList.add('off');
+			button.classList.remove('off');
+			button.classList.add('on');
+			console.log(button);
+		});
 
-        </tbody>
-      </table>
-
-    </div>
-
-
-  </section>
-
-
-  </section>
-</section>
-
-
-  <script type="text/javascript">
-    
-    var buscar = document.getElementById('buscar');
-    var area   = document.getElementById('area-buscar');
-<<<<<<< HEAD
-    var entrada = document.getElementById('entrada');
-    buscar.addEventListener('click',function(){
-      area.classList.add('out-area');
-      entrada.classList.add('in-area');
-=======
-    buscar.addEventListener('click',function(){
-      //area.classList.add('out-area');
->>>>>>> 08b84f32a072e4a0dc6951a8619a364edcb0fd30
-    });
-
-
-  </script>
-
-  </body>
+		button.addEventListener('click',function(){
+			form.classList.add('on');
+			form.classList.remove('off');
+			this.classList.add('off');
+			console.log(this);
+		});
+		var inputpass = document.getElementsByClassName('view')[0];
+		var preview = document.getElementsByClassName('icon-preview')[0];
+		preview.addEventListener('mousedown',function() {
+			inputpass.type = "text";
+			this.addEventListener('mouseup',function(){
+				inputpass.type="password";
+			});
+		});
+	</script>
+</body>
 </html>

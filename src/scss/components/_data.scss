@@ -26,11 +26,19 @@
     & tr {
 
       text-align: center;
+
+      border-bottom: 1px solid color(color8);
+      &:last-child {
+        border-bottom: none;
+      }
     }
 
     &__item {
       height:60px;
-      border-bottom: 1px solid color(color8);
+
+
+
+
     }
   }
 }

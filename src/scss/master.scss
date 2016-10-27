@@ -5,6 +5,8 @@
        url('../lib/fonts/GothamRounded_Medium.ttf')  format('truetype');
  }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 
 body,*,html,a {
@@ -115,6 +117,12 @@ label {
 @import "components/mainevaluacion";
 @import "components/data";
 @import "components/buscar";
+@import "components/proyectoderesolucion";
+@import "components/actualizarresultadoevaluacion";
+@import "components/conveniodeasignacion";
+@import "components/actualizarconveniodeasignacion";
+@import "components/actualizarproyectoderesolucion";
+@import "components/resoluciondeincorporacion";
 
 @import "modules/buttons";
 @import "modules/inputs";
