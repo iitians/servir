@@ -234,7 +234,7 @@ label {
   height: 250px;
   position: absolute;
   top: -130%;
-  left: 290%;
+  left: 285%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4); }
@@ -375,6 +375,9 @@ label {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   opacity: .7; }
+
+.me {
+  left: 230%; }
 
 .main-app__title {
   height: 50px;

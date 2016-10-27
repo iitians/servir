@@ -107,8 +107,10 @@
   height: 250px;
   position: absolute;
   top:-130%;
-  left:290%;
+  left:285%;
   @include style-box();
+
+
 }
 
 .me-drop {
@@ -258,4 +260,11 @@
   font-weight: 400;
   opacity: .7;
 
+}
+
+
+
+
+.me {
+  left:230%;
 }
