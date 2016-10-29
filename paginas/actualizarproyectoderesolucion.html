@@ -38,16 +38,16 @@
 
             </div>
 
-            <nav class="nav-main__nav-app">
+           <nav class="nav-main__nav-app">
                 <ul class="nav-principal">
                     <li class="nav-principal__item">
                         Mantenimiento
                         <i class="nav-user__info-user__profile icon-chevron-down me-drop">
                             <div class="nav-profile me">
                                 <ul class="nav-perfil">
-                                    <li class="nav-profile__item"><a href="#">Métodos de Evaluación</a></li>
-                                    <li class="nav-profile__item"><a href="#">Convenios de Asignación</a></li>
-                                    <li class="nav-profile__item"><a href="#">Proyecto de Resolución</a></li>
+                                    <li class="nav-profile__item"><a href="metododeevaluacion.html">Métodos de Evaluación</a></li>
+                                    <li class="nav-profile__item"><a href="conveniodeasignacion.html">Convenios de Asignación</a></li>
+                                    <li class="nav-profile__item"><a href="proyectoderesolucion.html">Proyecto de Resolución</a></li>
                                 </ul>
 
                             </div>
@@ -57,8 +57,8 @@
                         <i class="nav-user__info-user__profile icon-chevron-down me-drop">
                             <div class="nav-profile me">
                                 <ul class="nav-perfil">
-                                    <li class="nav-profile__item"><a href="#">Resultados de Métodos de Evaluación</a></li>
-                                    <li class="nav-profile__item"><a href="#">Resulución e incorporación</a></li>
+                                    <li class="nav-profile__item"><a href="actualizarresultadodeevaluacion.html">Resultados de Métodos de Evaluación</a></li>
+                                    <li class="nav-profile__item"><a href="registrarresoluciondeincorporacion.html">Resulución e incorporación</a></li>
                                 </ul>
                             </div>
                         </i></li>
@@ -66,7 +66,7 @@
                         <i class="nav-user__info-user__profile icon-chevron-down me-drop">
                             <div class="nav-profile me">
                                 <ul class="nav-perfil">
-                                    <li class="nav-profile__item"><a href="#">Actualización del convenio</a></li>
+                                    <li class="nav-profile__item"><a href="actualizarconveniodeasignacion.html">Actualización del convenio</a></li>
                                 </ul>
                             </div>
                         </i>
@@ -75,7 +75,7 @@
                         <i class="nav-user__info-user__profile icon-chevron-down me-drop">
                             <div class="nav-profile me">
                                 <ul class="nav-perfil">
-                                    <li class="nav-profile__item"><a href="#">Actualización el proyecto de resolución</a></li>
+                                    <li class="nav-profile__item"><a href="actualizarproyectoderesolucion.html">Actualización el proyecto de resolución</a></li>
                                 </ul>
                             </div>
                         </i>
@@ -243,6 +243,15 @@
             area.classList.remove('out-area','show');
             entrada.classList.add('in-area');
         },1000);
+    });
+
+
+    data.addEventListener('click',function(){
+      data.classList.add('out-area');
+      setTimeout(function(){
+        data.classList.remove('in-area','out-area','show');
+        area.classList.add('in-area');
+      },1000);
     });
 
 </script>
