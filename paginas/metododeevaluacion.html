@@ -136,7 +136,8 @@
           <div class="main-evaluacion-right">
             <div class="main-evaluacion-right__description">
               <label for="">Descripción</label>
-              <input class="type-descripcion" type="text" name="name">
+                <textarea class="type-descripcion"></textarea>
+
             </div>
             <div class="main-evaluacion-right__add">
               <div class="type-plus">
@@ -150,28 +151,56 @@
         <div class="buscar">
 
           <div class="buscar-data" id="entrada">
-            Listado
+              <div class="type-input type-input-search b-s">
+                  <input class="type-input__2" type="search" name="name">
+                  <div class="search" id="buscar-data">
+                      <i class="icon-search"></i>
+                  </div>
+              </div>
+
+            <div class="table-search">
+                <table class="table-data table-s">
+                    <thead>
+                        <tr class="head-search">
+                            <th class="head-search__item">ID</th>
+                            <th class="head-search__item">NOMBRE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-search">
+                            <td class="row-search__item">PT001</td>
+                            <td class="row-search__item">Yefri Oscar</td>
+                        </tr>
+                        <tr class="row-search">
+                            <td class="row-search__item">PT001</td>
+                            <td class="row-search__item">Ashlie Martina</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
           </div>
 
-          <div class="buscar-principal show" id="area-buscar">
-            <div class="buscar-principal__item">
-              <label for="">Codigo de postulante</label>
-              <div class="type-input type-input-search">
-                <input class="type-input__2" type="text" name="name">
-                <div class="search" id="buscar">
-                  <i class="icon-search"></i>
-                </div>
-              </div>
-            </div>
+          <div class="buscar-p show" id="area-buscar">
+              <div class="buscar-principal">
+                  <div class="buscar-principal__item">
+                      <label for="">Codigo de postulante</label>
+                      <div class="type-input type-input-search">
+                          <input class="type-input__2" type="text" name="name">
+                          <div class="search" id="buscar">
+                              <i class="icon-search"></i>
+                          </div>
+                      </div>
+                  </div>
 
-            <div class="buscar-principal__item">
-              <label for="">Nombre de postulante</label>
-              <input class="type-input" type="text" name="name">
-            </div>
-            <div class="buscar-principal__item">
-              <label for="">Nota del postulante</label>
-              <input class="type-input" type="text" name="name">
-            </div>
+                  <div class="buscar-principal__item">
+                      <label for="">Nombre de postulante</label>
+                      <input class="type-input" type="text" name="name">
+                  </div>
+                  <div class="buscar-principal__item">
+                      <label for="">Nota del postulante</label>
+                      <input class="type-input" type="text" name="name">
+                  </div>
+              </div>
           </div>
 
         </div>
@@ -235,17 +264,26 @@
       area.classList.add('out-area');
       setTimeout(function(){
         area.classList.remove('in-area','out-area','show');
-        data.classList.add('in-area');
+        data.classList.add('show','in-area');
       },1000);
+        setTimeout(function(){
+            data.classList.remove('in-area');
+        },500);
     });
 
+/*
     data.addEventListener('click',function(){
       data.classList.add('out-area');
       setTimeout(function(){
         data.classList.remove('in-area','out-area','show');
-        area.classList.add('in-area');
+        area.classList.add('show','in-area');
       },1000);
+        setTimeout(function(){
+            area.classList.remove('in-area');
+        },500);
+
     });
+*/
 
   </script>
 

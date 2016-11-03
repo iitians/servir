@@ -1,3 +1,20 @@
+.cta {
+	background-color:none;
+	border:none;
+	border-radius:30px;
+
+	p {
+		position:absolute;
+		font-size: 24px;
+		color:white;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		z-index: 1000;
+		cursor:pointer;
+	}
+}
+
 .btn-type-1 {
 	display: block;
 	border-radius:30px;
@@ -8,7 +25,7 @@
 	cursor: pointer;
 	transition: 100ms all ease-in-out;
 	text-align: center;
-
+	width:100%;
 }
 
 

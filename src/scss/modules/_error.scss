@@ -1,0 +1,122 @@
+.form-error{
+  position:relative;
+  margin-top: 1em;
+  height:100px;
+  width:100%;
+}
+
+
+.ns-box {
+  background: color(color2);
+  padding: 22px;
+  z-index: 1000;
+  pointer-events: none;
+  color: color(color8);
+  font-size: 90%;
+  border-radius:15px;
+  width:100%;
+  color:white;
+  box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.4);
+
+  &-inner {
+    width:100%;
+  }
+
+}
+
+.ns-box.ns-show {
+  pointer-events: auto;
+}
+
+.ns-box a {
+  color: inherit;
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.ns-box a:hover,
+.ns-box a:focus {
+  opacity: 1;
+}
+
+.ns-box p {
+  margin: 0;
+  color:white;
+}
+
+.ns-box.ns-show,
+.ns-box.ns-visible {
+  pointer-events: auto;
+}
+
+.cross {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 22px;
+  top: 6px;
+  cursor: pointer;
+}
+
+.ns-close:hover,
+.ns-close:focus {
+	outline:none;
+}
+
+.ns-close::before,
+.ns-close::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  background: red;
+}
+
+
+.ns-close:hover::before,
+.ns-close:hover::after {
+  background-color: yellow;
+}
+
+.ns-close::before {
+  -webkit-transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.ns-close::after {
+  -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+input[disabled] {
+  cursor:auto;
+}
+
+
+.form-inicio__item.active .progress {
+	opacity: 1;
+	width: 100%;
+	-webkit-transition: width 1.2s;
+	transition: width 1.2s;
+}
+
+.form-inicio__item {
+  position:relative;
+}
+
+ .form-inicio__item .progress {
+	position: absolute;
+	left: 0;
+	background: rgba(0,0,0,0.2);
+	top: 0;
+	width: 0%;
+	opacity: 0;
+	height: 100%;
+	z-index: 10;
+	-webkit-transition: width 0s 0.3s, opacity 0.3s;
+	transition: width 0s 0.3s, opacity 0.3s;
+  border-radius:30px;
+}

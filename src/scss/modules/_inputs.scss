@@ -9,11 +9,17 @@
   border:1px solid #d0d0d0;
   outline: none;
   padding-left: 1em;
+  color: color(color8);
+  font-size: em(17px);
 }
 
 .type-descripcion {
   width: 240px;
   height: 120px;
+  max-height: 120px;
+  max-width:100%;
+  padding-top: 10px;
+
 }
 
 .type-input__2 {

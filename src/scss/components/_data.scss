@@ -55,3 +55,44 @@
     color:color(color2);
   }
 }
+
+.table-search {
+  margin: 1em 0 0 0;
+  color: color(color8);
+  width:100%;
+
+
+}
+
+.row-search {
+  font-size: 16px;
+
+  &:hover {
+    background-color: color(color4);
+    color:white;
+    cursor:pointer;
+  }
+
+
+  &__item {
+    height:30px;
+
+
+    text-align: center;
+
+  }
+}
+
+.head-search {
+
+  font-size: 18px;
+
+  &__item {
+
+  }
+}
+
+
+.table-s {
+  width:100%;
+}

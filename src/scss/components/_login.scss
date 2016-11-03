@@ -1,5 +1,6 @@
 .form {
 	display: none;
+
 	width: 400px;
 	height:auto;
 	transition: .5s all ease-in-out;
@@ -63,14 +64,15 @@
 			font-size:em(22px);
 		}
 	}
-	& input {
+	& input[type="text"] {
 		border:none;
 		outline: none;
 		display: block;
 		width: 85%;
 		border-radius: 0px 15px 15px 0px;
 		background-color:color(color10);
-		font-size: em(16px);
+		font-size: em(17px);
+		color:color(color8);
 	}
 
 	& .view {
@@ -92,6 +94,10 @@
 .form-inicio__forget {
 	margin-bottom: 1.5em;
 	color:#bbbbbb;
+	transition: color .5s cubic-bezier(0.25,-0.27, 0.6, 1.33);
+	&:hover {
+		color:darken(#bbbbbb,20%);
+	}
 }
 [class^="icon-cross"]::before,
 [class^="icon-preview"]::before {
